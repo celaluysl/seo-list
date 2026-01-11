@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  
+  --color-primary: #0f1729;
+  --color-primary-hover: #1a243b;
+  --color-accent-green: #10B981;
+  --color-accent-green-hover: #059669;
+  --color-background-light: #FFFFFF;
+  --color-background-offset: #F8FAFC;
+  --color-background-dark: #14171e;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+}
