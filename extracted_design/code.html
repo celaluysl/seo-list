@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E-Ticaret SEO Hizmetleri | SEO Rehberi</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1354ec",
+                        "primary-dark": "#0f42b8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "text-main": "#111318",
+                        "text-secondary": "#616d89",
+                        "border-light": "#dbdee6",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<div class="bg-white border-b border-solid border-b-border-light sticky top-0 z-50">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<header class="flex items-center justify-between h-16 whitespace-nowrap">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-text-main hover:opacity-80 transition-opacity" href="#">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-text-main text-xl font-bold tracking-tight">SEO Rehberi</h2>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-text-secondary hover:text-primary text-sm font-medium transition-colors" href="#">Ajanslar</a>
+<a class="text-text-main text-sm font-medium" href="#">Hizmetler</a>
+<a class="text-text-secondary hover:text-primary text-sm font-medium transition-colors" href="#">Blog</a>
+<a class="text-text-secondary hover:text-primary text-sm font-medium transition-colors" href="#">İletişim</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex relative group">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary material-symbols-outlined text-[20px]">search</span>
+<input class="form-input flex w-full min-w-[240px] rounded-lg border border-transparent bg-background-light py-2 pl-10 pr-4 text-sm text-text-main placeholder:text-text-secondary focus:border-primary focus:bg-white focus:ring-0 transition-all" placeholder="Ajans veya hizmet ara..."/>
+</div>
+<button class="flex items-center justify-center rounded-lg h-9 px-4 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-colors shadow-sm">
+<span>Giriş Yap</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+<!-- Main Layout Container -->
+<div class="flex-grow flex flex-col items-center w-full">
+<div class="w-full max-w-[1280px] px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-8">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex text-sm text-text-secondary">
+<ol class="inline-flex items-center space-x-2">
+<li class="inline-flex items-center">
+<a class="hover:text-primary font-medium" href="#">Anasayfa</a>
+</li>
+<li><span class="mx-1">/</span></li>
+<li class="inline-flex items-center">
+<a class="hover:text-primary font-medium" href="#">Hizmetler</a>
+</li>
+<li><span class="mx-1">/</span></li>
+<li aria-current="page">
+<span class="text-text-main font-medium">E-Ticaret SEO</span>
+</li>
+</ol>
+</nav>
+<!-- Hero Section -->
+<section class="rounded-2xl bg-white border border-border-light overflow-hidden shadow-sm">
+<div class="@container">
+<div class="flex flex-col-reverse lg:flex-row">
+<!-- Content -->
+<div class="flex-1 flex flex-col justify-center p-8 lg:p-12 gap-6">
+<div class="flex flex-col gap-4">
+<span class="inline-flex w-fit items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-primary ring-1 ring-inset ring-blue-700/10">
+                                    🚀 Satışlarınızı Artırın
+                                </span>
+<h1 class="text-text-main text-4xl lg:text-5xl font-black leading-tight tracking-tight">
+                                    E-Ticaret Sitenizin Organik Trafiğini ve Satışlarını Maksimize Edin
+                                </h1>
+<p class="text-text-secondary text-lg leading-relaxed max-w-xl">
+                                    Rekabetin yoğun olduğu e-ticaret dünyasında ürünlerinizin Google'da ilk sayfada yer alması tesadüf değildir. Özel kurgulanmış SEO stratejileri ile görünürlüğünüzü ve dönüşüm oranlarınızı artırın.
+                                </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-primary-dark text-white text-base font-bold shadow-md transition-all hover:shadow-lg" href="#agencies">
+                                    Uzman Ajansları İncele
+                                </a>
+<a class="flex items-center justify-center rounded-lg h-12 px-6 bg-white border border-border-light text-text-main hover:bg-background-light text-base font-medium transition-colors" href="#details">
+                                    Hizmet Detayları
+                                </a>
+</div>
+<div class="flex items-center gap-4 text-sm text-text-secondary pt-4">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-[10px] font-bold overflow-hidden" data-alt="User avatar 1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUzK6V8-L1fv8HvXvtWv4k7_HnDyL4gyl2OcbTWzwLHKNW-4KLjyPUUV8yAw9kQ2VQluYuJo8MuSNhoALskVK6MoESB-t-pxvw5P8v6dEo9Qcbgfn1dGGN8xaBd5Z_Hveob6YEMaGaCAvTAOnrWki6UA7x4U7aCu9keg_VsytywxCSJdFG1dCN8IbAvJpT-UM3NRk1LqedwQnJMjqWlE0HcOUBJt9T2aQpY5BHm7B4AD3hhF5cvD7MMKIHqTrALYyv6iIJWbZzg-c");'></div>
+<div class="w-8 h-8 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center text-[10px] font-bold overflow-hidden" data-alt="User avatar 2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB70w73mY9tyYjP2VUHj2Za9-JRZsUbuTKuOhtD_PfZHgcFEjnCRbP5OUN95iiEedXBH7PNTTpLIrqdGbRO0NyYR1nytywGs6U_1ns6Ba89FNPLDaaQk6Nbz8x0bfkJPPE3vOrtdP8WzXnk1l8PCcNIeJjVFvY0pJhHdK0D2aUucuwoDeq7W8__jpeuq2wpowgs3y_Qh-B1Yht6e9Lt4h-Fbrbl31ei6nE8z9PG7yzUykIj7pcCAt8nirq4r_4Q28zdBH0RZ8q0WNM");'></div>
+<div class="w-8 h-8 rounded-full bg-gray-400 border-2 border-white flex items-center justify-center text-[10px] font-bold overflow-hidden" data-alt="User avatar 3" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOPfqhv0reWbPwNCHskL-ljeXoI0d0oa63U8L6_jHZzVJ3vYYckRPD4ll1FFCwH5KxiNSHyZ2ST342Par4tuQi2CXEV5aTCzGxt_pXSF3L7chmpTrNFGByzisq7vStpUu6rNx3b9WwW7u4aOHVVwc4lYGzZZD-6eIVftVqMFG24-LMnxYeYrE-zFGDF9-OqdY9pSxMfy_EQwKjA11YBcasfXlw0htlwjVFgRwO0F2ZTPE8Fc9Ju9KxcamckOWWP5pzCy7N4oam2MA");'></div>
+</div>
+<p>500+ işletme E-Ticaret SEO hizmeti aldı.</p>
+</div>
+</div>
+<!-- Image -->
+<div class="lg:w-1/2 min-h-[300px] lg:min-h-full relative bg-background-light">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Laptop displaying analytics graphs and charts with office background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXY7dpwKZVtWRIzxxot9bVh4KyzWHKHpGiHWYPlo4nIivE8K80sV2B1b-VvcLC5V-KKQRZw7rCQVN_3N-60NydvwOjAU70-U0cUOsydY2F8veymL_EwXDsZ-T659zyLfE-d89TkwSEqngS-pcd9LvNzd-IjFbSyPrt5tnaEstPu_g9B1DOhPTgIvQeuSF3eOvhoht4-yWMDilQYKX4RqhwO2vf7dDnkGd565t6HNPO0CIo25Z0X6vb1hxXADRKA8FwPg5hhPflILI");'></div>
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent lg:hidden"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent hidden lg:block"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section (Benefits) -->
+<section class="py-6" id="details">
+<div class="flex flex-col gap-3 mb-10">
+<h2 class="text-text-main text-3xl font-bold tracking-tight">Neden E-Ticaret SEO?</h2>
+<p class="text-text-secondary text-lg max-w-3xl">Ücretli reklamlara bağımlı kalmadan, sürdürülebilir ve kalıcı bir büyüme modeli oluşturun.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="group bg-white p-6 rounded-xl border border-border-light hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-2">Artan Organik Ciro</h3>
+<p class="text-text-secondary leading-relaxed">
+                            Satın alma niyeti yüksek anahtar kelimelerde üst sıralarda yer alarak, reklam maliyeti olmadan dönüşüm sağlayan trafik elde edin.
+                        </p>
+</div>
+<!-- Feature 2 -->
+<div class="group bg-white p-6 rounded-xl border border-border-light hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">category</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-2">Optimize Kategori Yapısı</h3>
+<p class="text-text-secondary leading-relaxed">
+                            Kullanıcı deneyimini ve tarama bütçesini optimize eden hiyerarşik yapı ile binlerce ürünün arama motorları tarafından doğru anlaşılmasını sağlayın.
+                        </p>
+</div>
+<!-- Feature 3 -->
+<div class="group bg-white p-6 rounded-xl border border-border-light hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-2">Teknik Mükemmellik</h3>
+<p class="text-text-secondary leading-relaxed">
+                            Site hızı, mobil uyumluluk ve yapılandırılmış veri işaretlemeleri ile e-ticaret sitenizin teknik altyapısını Google standartlarına taşıyın.
+                        </p>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="bg-white rounded-2xl p-8 lg:p-12 border border-border-light relative overflow-hidden">
+<!-- Background Pattern -->
+<div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-text-main mb-4">Çalışma Süreci Nasıl İşler?</h2>
+<p class="text-text-secondary">Profesyonel ajanslar, e-ticaret sitenizi başarıya ulaştırmak için kanıtlanmış bir yol haritası izler.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-gray-100 -z-10 translate-y-4"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 bg-white border-4 border-background-light rounded-full flex items-center justify-center text-primary mb-6 shadow-sm group-hover:border-primary group-hover:scale-110 transition-all duration-300 z-10">
+<span class="material-symbols-outlined text-[32px]">search_check</span>
+</div>
+<h4 class="text-lg font-bold text-text-main mb-2">1. Teknik Analiz</h4>
+<p class="text-sm text-text-secondary">Sitenin mevcut durumunun incelenmesi, teknik hataların ve indeksleme sorunlarının tespiti.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 bg-white border-4 border-background-light rounded-full flex items-center justify-center text-primary mb-6 shadow-sm group-hover:border-primary group-hover:scale-110 transition-all duration-300 z-10">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<h4 class="text-lg font-bold text-text-main mb-2">2. Kelime Stratejisi</h4>
+<p class="text-sm text-text-secondary">Rakiplerin analizi ve dönüşüm potansiyeli yüksek "long-tail" anahtar kelimelerin belirlenmesi.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 bg-white border-4 border-background-light rounded-full flex items-center justify-center text-primary mb-6 shadow-sm group-hover:border-primary group-hover:scale-110 transition-all duration-300 z-10">
+<span class="material-symbols-outlined text-[32px]">edit_note</span>
+</div>
+<h4 class="text-lg font-bold text-text-main mb-2">3. İçerik Optimizasyonu</h4>
+<p class="text-sm text-text-secondary">Kategori ve ürün açıklamalarının özgünleştirilmesi, meta etiketlerin düzenlenmesi.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 bg-white border-4 border-background-light rounded-full flex items-center justify-center text-primary mb-6 shadow-sm group-hover:border-primary group-hover:scale-110 transition-all duration-300 z-10">
+<span class="material-symbols-outlined text-[32px]">monitoring</span>
+</div>
+<h4 class="text-lg font-bold text-text-main mb-2">4. İzleme ve Raporlama</h4>
+<p class="text-sm text-text-secondary">Düzenli sıra takibi, trafik analizi ve aylık gelişim raporlarının sunulması.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Agency Listing Section -->
+<section class="flex flex-col gap-6 pt-4" id="agencies">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border-light pb-4">
+<div>
+<h2 class="text-text-main text-2xl font-bold tracking-tight">Bu Hizmeti Veren En İyi Ajanslar</h2>
+<p class="text-text-secondary text-sm mt-1">E-Ticaret SEO konusunda uzmanlaşmış seçkin ajanslar.</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium text-text-secondary">Sırala:</span>
+<select class="form-select text-sm border-border-light rounded-lg text-text-main focus:border-primary focus:ring-primary py-2 pl-3 pr-8 cursor-pointer">
+<option>Önerilen</option>
+<option>En Yüksek Puan</option>
+<option>En Çok Yorum</option>
+</select>
+</div>
+</div>
+<!-- List Container -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Agency Card 1 -->
+<article class="flex flex-col bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
+<div class="p-5 flex flex-col gap-4 flex-1">
+<div class="flex justify-between items-start">
+<div class="w-16 h-16 rounded-lg bg-gray-50 border border-border-light p-2 flex items-center justify-center" data-alt="Zeo Agency Logo placeholder">
+<span class="font-bold text-xl text-gray-700">Z</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700">
+<span class="material-symbols-outlined text-[14px]">verified</span> Onaylı
+                                    </span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary transition-colors">Zeo Agency</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star_half</span>
+</div>
+<span class="text-sm font-semibold text-text-main">4.8</span>
+<span class="text-xs text-text-secondary">(124 Yorum)</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                    İstanbul, Türkiye
+                                </div>
+</div>
+<p class="text-sm text-text-secondary line-clamp-3">
+                                Zeo, dijital pazarlama dünyasında ödüllü çalışmalarıyla tanınan, veri odaklı bir SEO ve dijital pazarlama ajansıdır. E-ticaret siteleri için özel geliştirilmiş teknik altyapı çözümleri sunar.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">E-Ticaret SEO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Teknik SEO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Content Marketing</span>
+</div>
+</div>
+<div class="p-4 border-t border-border-light bg-gray-50/50 flex gap-3">
+<button class="flex-1 h-10 rounded-lg bg-white border border-border-light text-text-main text-sm font-semibold hover:bg-gray-50 hover:text-primary hover:border-primary transition-colors">Profili İncele</button>
+<button class="flex-1 h-10 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm">Teklif Al</button>
+</div>
+</article>
+<!-- Agency Card 2 -->
+<article class="flex flex-col bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
+<div class="p-5 flex flex-col gap-4 flex-1">
+<div class="flex justify-between items-start">
+<div class="w-16 h-16 rounded-lg bg-gray-50 border border-border-light p-2 flex items-center justify-center" data-alt="Kubix Digital Logo placeholder">
+<span class="font-bold text-xl text-gray-700">K</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700">
+<span class="material-symbols-outlined text-[14px]">verified</span> Onaylı
+                                    </span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary transition-colors">Kubix Digital</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+</div>
+<span class="text-sm font-semibold text-text-main">5.0</span>
+<span class="text-xs text-text-secondary">(86 Yorum)</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                    Ankara, Türkiye
+                                </div>
+</div>
+<p class="text-sm text-text-secondary line-clamp-3">
+                                E-ticaret markalarının global pazarlarda büyümesine odaklanan Kubix, performans pazarlaması ve SEO'yu bütünleşik olarak ele alır. Shopify ve Magento uzmanlığı.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Global SEO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Shopify SEO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">PPC</span>
+</div>
+</div>
+<div class="p-4 border-t border-border-light bg-gray-50/50 flex gap-3">
+<button class="flex-1 h-10 rounded-lg bg-white border border-border-light text-text-main text-sm font-semibold hover:bg-gray-50 hover:text-primary hover:border-primary transition-colors">Profili İncele</button>
+<button class="flex-1 h-10 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm">Teklif Al</button>
+</div>
+</article>
+<!-- Agency Card 3 -->
+<article class="flex flex-col bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
+<div class="p-5 flex flex-col gap-4 flex-1">
+<div class="flex justify-between items-start">
+<div class="w-16 h-16 rounded-lg bg-gray-50 border border-border-light p-2 flex items-center justify-center" data-alt="SEO Artı Logo placeholder">
+<span class="font-bold text-xl text-gray-700">S</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary transition-colors">SEO Artı</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] text-gray-300">star</span>
+</div>
+<span class="text-sm font-semibold text-text-main">4.2</span>
+<span class="text-xs text-text-secondary">(45 Yorum)</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                    İzmir, Türkiye
+                                </div>
+</div>
+<p class="text-sm text-text-secondary line-clamp-3">
+                                KOBİ'ler ve büyümekte olan e-ticaret girişimleri için uygun maliyetli ve sonuç odaklı SEO paketleri. Woocommerce ve İdeaSoft altyapılarında deneyimli.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">KOBİ SEO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Yerel SEO</span>
+</div>
+</div>
+<div class="p-4 border-t border-border-light bg-gray-50/50 flex gap-3">
+<button class="flex-1 h-10 rounded-lg bg-white border border-border-light text-text-main text-sm font-semibold hover:bg-gray-50 hover:text-primary hover:border-primary transition-colors">Profili İncele</button>
+<button class="flex-1 h-10 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm">Teklif Al</button>
+</div>
+</article>
+<!-- Agency Card 4 -->
+<article class="flex flex-col bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
+<div class="p-5 flex flex-col gap-4 flex-1">
+<div class="flex justify-between items-start">
+<div class="w-16 h-16 rounded-lg bg-gray-50 border border-border-light p-2 flex items-center justify-center" data-alt="Boost ROAS Logo placeholder">
+<span class="font-bold text-xl text-gray-700">B</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700">
+<span class="material-symbols-outlined text-[14px]">verified</span> Onaylı
+                                    </span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary transition-colors">Boost ROAS</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star_half</span>
+</div>
+<span class="text-sm font-semibold text-text-main">4.7</span>
+<span class="text-xs text-text-secondary">(92 Yorum)</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                    İstanbul, Türkiye
+                                </div>
+</div>
+<p class="text-sm text-text-secondary line-clamp-3">
+                                Performans pazarlaması ve SEO'yu birleştirerek e-ticaret siteleri için maksimum ROAS hedefler. Veri analitiği ve CRO konusunda uzmanlaşmış ekip.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">CRO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Analytics</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">E-Ticaret SEO</span>
+</div>
+</div>
+<div class="p-4 border-t border-border-light bg-gray-50/50 flex gap-3">
+<button class="flex-1 h-10 rounded-lg bg-white border border-border-light text-text-main text-sm font-semibold hover:bg-gray-50 hover:text-primary hover:border-primary transition-colors">Profili İncele</button>
+<button class="flex-1 h-10 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm">Teklif Al</button>
+</div>
+</article>
+<!-- Agency Card 5 -->
+<article class="flex flex-col bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
+<div class="p-5 flex flex-col gap-4 flex-1">
+<div class="flex justify-between items-start">
+<div class="w-16 h-16 rounded-lg bg-gray-50 border border-border-light p-2 flex items-center justify-center" data-alt="Webtures Logo placeholder">
+<span class="font-bold text-xl text-gray-700">W</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary transition-colors">Webtures</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] text-gray-300">star</span>
+</div>
+<span class="text-sm font-semibold text-text-main">4.1</span>
+<span class="text-xs text-text-secondary">(210 Yorum)</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                    İstanbul, Türkiye
+                                </div>
+</div>
+<p class="text-sm text-text-secondary line-clamp-3">
+                                Türkiye'nin önde gelen SEO ajanslarından biri. Kurumsal firmalar için kapsamlı dijital pazarlama stratejileri ve itibar yönetimi hizmetleri sunar.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-2">
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">Kurumsal SEO</span>
+<span class="px-2 py-1 bg-background-light text-text-secondary text-xs rounded border border-border-light">PR</span>
+</div>
+</div>
+<div class="p-4 border-t border-border-light bg-gray-50/50 flex gap-3">
+<button class="flex-1 h-10 rounded-lg bg-white border border-border-light text-text-main text-sm font-semibold hover:bg-gray-50 hover:text-primary hover:border-primary transition-colors">Profili İncele</button>
+<button class="flex-1 h-10 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm">Teklif Al</button>
+</div>
+</article>
+<!-- CTA Card for More Agencies -->
+<article class="flex flex-col bg-background-light border border-border-light border-dashed rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300 justify-center items-center p-6 text-center">
+<div class="w-16 h-16 rounded-full bg-white border border-border-light flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-[32px]">add</span>
+</div>
+<h3 class="text-lg font-bold text-text-main mb-2">Tüm Ajansları Gör</h3>
+<p class="text-sm text-text-secondary mb-6">Rehberimizde kayıtlı 50+ E-Ticaret SEO ajansını inceleyin.</p>
+<button class="h-10 px-6 rounded-lg bg-white border border-border-light text-text-main text-sm font-semibold hover:bg-gray-50 hover:text-primary hover:border-primary transition-colors">Listeyi Görüntüle</button>
+</article>
+</div>
+</section>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-white border-t border-border-light mt-12">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="size-6 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-lg font-bold text-text-main">SEO Rehberi</span>
+</div>
+<p class="text-sm text-text-secondary">Doğru ajansı bulmanız için en kapsamlı dijital pazarlama rehberi.</p>
+</div>
+<div>
+<h4 class="font-bold text-text-main mb-4">Hizmetler</h4>
+<ul class="space-y-2 text-sm text-text-secondary">
+<li><a class="hover:text-primary" href="#">E-Ticaret SEO</a></li>
+<li><a class="hover:text-primary" href="#">Yerel SEO</a></li>
+<li><a class="hover:text-primary" href="#">İçerik Pazarlaması</a></li>
+<li><a class="hover:text-primary" href="#">Sosyal Medya</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-main mb-4">Kurumsal</h4>
+<ul class="space-y-2 text-sm text-text-secondary">
+<li><a class="hover:text-primary" href="#">Hakkımızda</a></li>
+<li><a class="hover:text-primary" href="#">Ajans Kayıt</a></li>
+<li><a class="hover:text-primary" href="#">Reklam</a></li>
+<li><a class="hover:text-primary" href="#">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-main mb-4">Bülten</h4>
+<p class="text-sm text-text-secondary mb-3">En yeni SEO trendlerini kaçırmayın.</p>
+<div class="flex gap-2">
+<input class="flex-1 rounded-lg border border-border-light bg-background-light px-3 py-2 text-sm focus:border-primary focus:ring-primary" placeholder="E-posta adresiniz" type="email"/>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white hover:bg-primary-dark">Abone Ol</button>
+</div>
+</div>
+</div>
+<div class="border-t border-border-light pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-secondary">
+<p>© 2023 SEO Rehberi. Tüm hakları saklıdır.</p>
+<div class="flex gap-6">
+<a class="hover:text-text-main" href="#">Gizlilik Politikası</a>
+<a class="hover:text-text-main" href="#">Kullanım Şartları</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
